@@ -1,0 +1,67 @@
+*{
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
+a{
+    text-decoration: none;
+    
+}
+img{
+    width: 100%;
+}
+.index-top{
+    width: 100%;
+    background-color: #3f2906;
+    height: auto;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 99999;
+}
+.top-middle{
+    max-width: 1600px;
+    margin:0 auto;
+
+}
+.top-logo{
+    width: 300px;
+    float: left;
+}
+.top-explain{
+    float: right;
+    display: table;
+}
+.top-explain a {
+    float: left;
+    color: #fff;
+
+    padding-top: -15px;
+    padding-right: 40px;
+    line-height: 50px;
+    
+}
+.top-explain a:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    color: orange;
+}
+.main-imgdiv{
+    width: 50%;
+
+    overflow: hidden;
+}
+.main-img{
+    transition: 0.5s;
+    vertical-align: middle;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
