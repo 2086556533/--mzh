@@ -94,9 +94,11 @@ img {
     padding: 0;
     margin: 0;
 }
-.banner{
-        margin-bottom: -5px;
+
+.banner {
+    margin-bottom: -5px;
 }
+
 /*banner结束*/
 
 /*主体开始*/
@@ -152,7 +154,7 @@ img {
 }
 
 .main-img:hover {
-    transition: 0.5s;
+    transition: .5s ease;
     transform: scale(1.1);
 }
 
@@ -260,7 +262,11 @@ img {
     float: left;
     vertical-align: middle;
 }
+.chaining{
 
+    width: auto;
+    height: auto;
+}
 .chaining:hover {
     transition-duration: 0.5s;
     transform: translateX(10px);
@@ -276,8 +282,7 @@ img {
 .main-three {
     width: 100%;
     float: left;
-    background-color: rgb(148, 32, 32);
-    position: relative;
+    background: url(../imgs/5411.jpg);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -290,40 +295,48 @@ img {
     top: 12.5%;
     float: left;
     left: 10%;
+}
 
-}
-.threel{
+.threel {
     width: 50%;
     float: left;
 }
-.threer{
+
+.threer {
     width: 50%;
     float: left;
 }
-#threer-img{
+
+#threer-img {
     margin-top: 10px;
     margin-bottom: 5px;
     float: right;
 }
-#p-some{
+
+#p-some {
     line-height: 2;
 }
-.p{
+
+.p {
     font-size: 30px;
     color: #800000;
 }
-.p1{
+
+.p1 {
     font-size: 16px;
     color: #b00000;
 }
-.p2,.p3{
+
+.p2, .p3 {
     font-size: 14px;
     color: #666666;
 }
-.button-some{
+
+.button-some {
     margin-top: 50px;
 }
-.button{
+
+.button {
     border: 1px solid #ccc;
     line-height: 32px;
     background: #bd0014;
@@ -335,18 +348,280 @@ img {
     margin-left: 50px;
     color: #fff;
 }
-.button:hover{
+
+.button:hover {
     transition-property: all;
     transition-duration: 0.5s;
     background: #ffc038;
     border: none;
+}
+
+.button-main {
+    display: inline;
+}
+
+.button-word {
+    display: inline;
+}
+
+.main-four {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    float: left;
+}
+
+.main-fourtop {
+    width: 80%;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    left: 10%;
+}
+
+.fourl {
+    margin-top: 20px;
+    float: left;
+}
+
+.fourl-explain1 {
+    text-align: left;
+    line-height: 1;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #696969;
+}
+
+.fourl-explain2 {
+    text-align: left;
+    font-size: 30px;
+    color: #333;
+}
+
+.fourr {
+    margin-top: 20px;
+    float: left;
+}
+
+.fourr-explain1 {
+    line-height: 2;
+    font-size: 14px;
+    color: #999;
+    margin-top: 6%;
+    margin-left: 0;
+}
+
+.fourr-r {
+    width: 100px;
+    float: right;
+    overflow: hidden;
+}
+
+.bigdiv {
+    width: 100px;
+    height: 50px;
+    display: block;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+.font {
+    line-height: 3.5;
+}
+
+.four-middle {
+    float: left;
+    width: 100%;
+}
+
+.middle-top {
+    float: left;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    position: relative;
+    left: 10%;
+}
+
+.middletop-img {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
+.middletop-img:hover .overlay {
+    width: 100%;
+}
+
+.middletopimg-img {
+    display: block;
+}
+.text{
+    white-space: nowrap;
+    color: #800000;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#middletopimg-img {
+    margin-left: 1%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../imgs/abbg.jpg);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.middle-bottom a {
+    display: inline-block;
+}
+
+.middle-bottom {
+    float: left;
+    width: 100%;
+    margin-top: -5%;
+    position: relative;
+    left: 10%;
+}
+.five-text{
+    width: 100%;
+    position: relative;
+    top: 50%;
+}
+.five-text span{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: 微软雅黑;
+}
+.seven{
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    padding-top: 30px;
+}
+.seven-explain{
+    width: 80%;
+    height: 400px;
+    background: white;
+
+    margin: 0 auto;
+}
+.sexplain-explain{
+    width: 20%;
+
+    float: left;
+    background:white;
+}
+.a-text{
+    width: 100px;
+    height: 30px;
+    background: #fca91f;
+    z-index: 999999;
+    position: relative;
+    bottom: -13%;
+    left: -20%;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+.sexplain-explain{
+    border-bottom: 5px solid yellow;
+}
+.sexplain-one{
+    margin-left: 5%;
+    overflow: hidden;
+}
+.sexplain-two,.sexplain-three,.sexplain-four{
+    margin-left: 3%;
+}
+.sexexplain-imgs:hover{
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+.mzh-one{
+    width: 230px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    top: -10%;
+    left: 10%;
+}
+.seven-more{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+    left: 5%;
+}
+.eight{
+    width: 100%;
+    background: #1f1f1f;
+    padding-top: 50px;
+}
+.eight a,.eight p{
+    display: inline-block;
+}
+.eight-middle{
+    width: 80%;
+    height: 400px;
     
-}
-.button-main{
-    display: inline;
-}
-.button-word{
-    display: inline;
+    margin: 0 auto;
 
 }
-/*主体结束*/
+.eight-middle p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #595959;
+}
+.left{
+    width: 20%;
+    float: left;
+    padding-left: 10px;
+}
+.left-one{
+    margin-left: 10%;
+}
+.left-three{
+    text-align: left;
+}
+.left a{
+    text-align: left;
+    line-height: 2;
+    color: #595959;
+}
+.middle-r p{
+    text-align: left;
+}
+.middle-r img{
+    position: relative;
+    left: 5%;
+}
+.bottom{
+    width: 100%;
+    background: #000;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.mzh{
+    color: white;
+}
+.b-package{
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 25%;
+}
+/*主体结束*
+/
