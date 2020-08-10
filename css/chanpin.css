@@ -127,91 +127,38 @@ p, span {
     margin-top: 30px;
     line-height: 2;
 }
-
-.one {
-    height: 500px;
-    position: relative;
-    background-image: url(../imgs/abbg.jpg);
-    padding-top: 100px;
+.nav-fontfont:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: #bc0728;
 }
-
-.one-center {
-    width: 80%;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.one-top {
-    width: 80%;
-    position: relative;
-    margin: 0 auto;
-}
-
-.top-right {
-    width: 66%;
-    height: 300px;
-    float: left;
-}
-
-.right-font1 {
-    font-size: 42px;
-    color: #bc0728;
-    text-align: center;
-}
-
-.right-font2 {
-    font-size: 14px;
-    line-height: 2;
-    text-indent: 40px;
-}
-
-.right-font3 {
-    font-size: 14px;
-    line-height: 2;
-    text-indent: 30px;
-}
-
-.botton-font {
-    width: 18%;
-    height: 100px;
-    float: left;
-}
-
-.botton-one {
-    margin-left: 15%;
-}
-
-.botton-one, .botton-two, .botton-three {
-    border-right: 1px solid rgb(218, 218, 218);
-}
-
 .two {
-    background-image: url(../imgs/about-bg2.jpg);
+    background-image: url(../imgs/abbg.jpg);
     width: auto;
     height: 670px;
+    position: relative;
+    z-index: 9999999999;
+    padding-top: 50px;
 }
 
 .two-top {
     width: 40%;
     margin: 0 auto;
     position: relative;
-    top: 25%;
+    top: 10%;
     font-size: 42px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding-right: 5%;
 
 }
 .two-line{
-    width: 80px;
-    height: 2px;
-    background: rgb(255, 255, 255);
+    width: 200px;
     position: relative;
     margin: 0 auto;
     margin-top: 20px;
-    right: 50px;
-    top: 200px;
+    right: 25px;
+    top: 8%;
 }
 .two-bottom{
     width: 80%;
@@ -221,50 +168,15 @@ p, span {
     margin-top: 20px;
     
 }
-.three{
-    height: 500px;
-    background-image: url(../imgs/navbg3.jpg);
-}
-.three-center{
-    width: 80%;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.center-top{
-    width: 20%;
-    height: 100px;
-    text-align: center;
-    font-size: 42px;
+.bottom-bottom{
+    height: 50px;
+    width:150px;
+    border: 2px solid yellow;
     position: relative;
-    left: 40%;
-    color: #bc0728;
-
-}
-
-.three-four{
-    width: 22%;
-
-    overflow: hidden;
-    border: 1px solid white;
-    float: left;
-    margin-right: 5%;
-}
-.three-four:hover{
-    transition: .5s ease;
-    transform: scale(1.1);
-}
-.three-one{
-    margin-left: 10%;
-}
-.threebottom-font{
-    line-height: 2;
-    border-bottom: 1px solid white;
-    text-align: left;
-    text-indent: 30px;
-    font-size: 1rem;
-    color: black;
-    
+    top: -30%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3.3;
 }
 .body-bottom{
     width: 100%;

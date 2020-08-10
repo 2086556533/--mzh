@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本页面仅供练习</title>
+    <link rel="stylesheet" href="css/chanpin.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="big">
+        <div class="top">
+
+            <div class="top-l">
+                <a href="index.html" class="top-logo">
+                    <img src="imgs/about-logo.png" alt="" style="width:60%;">
+                </a>
+            </div>
+            <div class="top-r">
+                <div class="nav">
+                    <img src="imgs/nav.png" alt="" style="width: 70%; margin-left: 2px;margin-top: 2px;">
+                </div>
+            </div>
+            <img src="imgs/yd.jpg" alt="" style="position: relative;top: -120px;">
+        </div>
+        <div class="font">
+            <div class="title"><span>关于我们</span></div>
+            <div class="line"></div>
+            <div class="small-font"><span>贵阳五阿哥食品有限公司的前身为贵阳老太康食品中心。创建于1992年，1995年更名为贵阳五阿哥食品有限公司</span></div>
+            <div class="cicle">
+                <div class="point"></div>
+            </div>
+        </div>
+        <div class="big-nav">
+            <div class="nav-font">
+                <div class="nav-fontfont"><a href="" style="color: white;">五阿哥金牌云腿月饼</a></div>
+                <div class="nav-fontfont"><a href="" style="color: white;">五阿哥御瓷尊贵礼月饼</a></div>
+                <div class="nav-fontfont"><a href="" style="color: white;">五阿哥莲香逸趣月饼</a></div>
+                <div class="nav-fontfont"><a href="" style="color: white;">五阿哥名典诚品云腿月饼</a></div>
+                <div class="nav-fontfont"><a href="" style="color: white;">五阿哥雅品月饼</a></div>
+                <div class="nav-fontfont"><a href="" style="color: white;">五阿哥尊典鲍月饼</a></div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-top"><span>产品中心</span></div>
+            <div class="two-line">PRODUCT CENTER</div>
+            
+        </div>
+        <div id="persons">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="imgs/1.jpg" alt="">
+                  <div class="text">
+                   
+                  
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/4.jpg" alt="">
+                  <div class="text">
+                   
+                   
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/4.jpg" alt="">
+                  <div class="text">
+                   
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="imgs/5.jpg" alt="">
+                  <div class="text">
+                    
+                    
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/6.jpg" alt="">
+                    <div class="text">
+                     
+                    
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/6.jpg" alt="">
+                    <div class="text">
+                      
+                    
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/7.jpg" alt="">
+                    <div class="text">
+                     
+                    
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/8.jpg" alt="">
+                    <div class="text">
+                      
+                    
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/2.jpg" alt="">
+                    <div class="text">
+                      
+                    
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/3.jpg" alt="">
+                    <div class="text">
+                     
+                    
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        
+          <div class="bottom-bottom">
+              <div class="bottom-center">
+                    <a href="">READMORE</a>
+              </div>
+          </div>
+          <script src="swiper.min.js"></script>
+          <script>
+            var personsSwiper = new Swiper('#persons .swiper-container', {
+              watchSlidesProgress: true,
+              slidesPerView: 'auto',
+              centeredSlides: true,
+              loop: true,
+              loopedSlides: 5,
+              autoplay: true,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              on: {
+                progress: function (progress) {
+                  for (i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i);
+                    var slideProgress = this.slides[i].progress;
+                    modify = 1;
+                    if (Math.abs(slideProgress) > 1) {
+                      modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                    }
+                    translate = slideProgress * modify * 260 + 'px';
+                    scale = 1 - Math.abs(slideProgress) / 5;
+                    zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                    slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                    slide.css('zIndex', zIndex);
+                    slide.css('opacity', 1);
+                    if (Math.abs(slideProgress) > 3) {
+                      slide.css('opacity', 0);
+                    }
+                  }
+                },
+                setTransition: function (transition) {
+                  for (var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i)
+                    slide.transition(transition);
+                  }
+        
+                }
+              }
+            })
+          </script>
+          <div class="body-bottom">
+            <div class="b-package">
+                <p style="text-align: center;color: white; line-height: 3;">© 1999-2018 贵阳五阿哥食品有限公司 Copyright ©
+                    1999-2018 All Rights Reserved 黔ICP备19008343号
+                    网站建设：中企动力 贵阳</p>
+            </div>
+        </div>
+</body>
+
+</html>
